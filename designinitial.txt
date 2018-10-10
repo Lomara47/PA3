@@ -1,0 +1,115 @@
+Function Name:Football
+Parameters:None
+Return:QB Rating
+Algorithm:
+
+1. Ask user for number of pass completions then store in completions
+2. Ask user for number of pass attempts then store in attempts
+3. Ask user for number of passing yards then store in passing_yards
+4. Ask user for number of touchdown passes then store in touchdown_passes
+5. Ask user for number of interceptions then store in interceptions
+6. Calculate the QB ratio by using the formula (QB rating = 100 * [5(completions/attempts - 0.3) + 0.25(passing_yards/attempts-3) \
++ 20 (touchdown_passes/attempts) + 2.375 - (25 * interceptions/attempts)]/6)
+7. if QB Rating is equal to 158.3:
+    a. Output "The QB is a perfect passer"
+8. Otherwise:
+    a. Output "The QB is not good"
+
+Function Name: quidditch
+Parameters: None
+Return: score
+Algorithm:
+
+1. Ask the user the number of goals scored then store in goals
+2. Calculate score formula using (goal*10) then, store in score
+3. Ask user if team has captured the snitch
+4. If the team has captured snitch
+    a. Calculate the score using formula (score +30) then store in new_score
+    b. Output new score
+5. Otherwise:
+    a. Output Scores
+
+Function Name: gynastics
+Parameters: None
+Return: final_score
+Algorithm:
+
+1. Ask user their difficulty score, store as float (from 0 to 10) then, store as difficulty_score
+2. Ask user if their execution score is one, store as float (from 0 to 10) then, store as score1
+3. Ask user if their execution score is two, store as float (from 0 to 10) then, store as score2
+4. Ask user if their execution score is three, store as float (from 0 to 10) then, store as score3
+5. Ask user if their execution score is four, store as float (from 0 to 10) then, store as score4
+6. Ask user if their execution score is five, store as float (from 0 to 10) then, store as score5
+
+Function Name: Maximmum
+Parameters: None
+Return: Max_score
+Algorithm:
+
+1.If users score1 is greater or equal to score2 and score1 is greater or equal to score3 and score1 is greater than or \
+equal to score4 and score 1 is greater or equal to score5
+a.	Output score 1 as maximum score then store in max_score
+b.	Return max_score
+
+2.If users score2 is greater or equal to score1 and score2 is greater or equal to score3 and score2 is greater than or \
+equal to score4 and score 2 is greater or equal to score5
+a.	Output score 2 as maximum score then store in max_score
+b.	Return max_score
+
+3.If users score3 is greater or equal to score1 and score3 is greater or equal to score2 and score3 is greater than or \
+equal to score4 and score3 is greater or equal to score5
+a.	Output score3 as maximum score then store in max_score
+b.	Return max_score
+
+4.If users score4 is greater or equal to score1 and score4 is greater or equal to score2 and score4 is greater than or \
+equal to score3 and score4 is greater or equal to score5
+a.	Output score 4 as maximum score then store in max_score
+b.	Return max_score
+
+5.If users score5 is greater or equal to score1 and score5 is greater or equal to score2 and score5 is greater than or \
+equal to score3 and score5 is greater or equal to score4
+a.	Output score5 as maximum score then store in max_score
+b.	Return max_score
+
+Function Name: Minimum
+Parameters: None
+Return: Min_score
+Algorithm
+1. if score1 is lesser or equal to score2 and score1 is lesser or equal to score3 and score1 is lesser \
+or equal to score4 and score1 is lesser than or equal to score5
+    a. Output score1 is the max score, store in min_score
+    b. Return min_score
+2. if score2 is lesser or equal to score1 and score2 is lesser or equal to score3 and score2 is lesser \
+or equal to score4 and score2 is lesser than or equal to score5
+    a. Output score2 is the max score, store in min_score
+    b. Return min_score
+3. if score3 is lesser or equal to score1 and score3 is lesser or equal to score2 and score3 is lesser \
+or equal to score4 and score3 is lesser than or equal to score5
+    a. Output score3 is max score, store in min_score
+    b. Return min_score
+4. if score4 is lesser or equal to score1 and score4 is lesser or equal to score2 and score4 is lesser \
+than or equal to score3 and score4 is lesser than or equal to score5
+    a. Output score4 is max score, store in min_score
+    b. Return min_score
+5. if score5 is lesser or equal to score1 and score5 is lesser or equal to score2 and score5 is lesser \
+or equal to score3 and score5 is lesser than or equal to score4
+    a. Output score5 is max score, store in min_score
+    b. Return min_score
+6. Calculate total (score1 + score2 + score3 +score4 +score5), store as score_total
+7. Calculate execution score (score_total - min_score - max_score), store in execution_score
+8. Calculate final score (execution_score/3 + difficulty_score
+
+
+Function Name: Main
+Parameters: None
+Return: None
+Algorithm:
+
+1.Ask the user which spot statistic they want to be calculated then store in sport
+2. if user picks football
+    a. Run football function
+3. if user picks quidditch
+    a. Run quidditch function
+4. if user picks gynastics
+    a. Run gynastics function
+
