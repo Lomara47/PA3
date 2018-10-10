@@ -15,7 +15,7 @@ Algorithm:
 8. Otherwise:
     a. Output "The QB is not good"
 
-Function Name: quidditch
+Function Name: Quidditch
 Parameters: None
 Return: score
 Algorithm:
